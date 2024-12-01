@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>David Chu's China Bistro</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+<body>
+  <header>
+    <nav id="header-nav" class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <div class="navbar-brand">
+          <h1>David Chu's China Bistro</h1>
+          <p><span>Kosher Certified</span></p>
+        </div>
+
+        <button id="navbarToggle" type="button" class="navbar-toggler" data-toggle="collapse" data-target="#collapsable-nav" aria-controls="collapsable-nav" aria-expanded="false">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div id="collapsable-nav" class="collapse navbar-collapse">
+          <ul id="nav-list" class="navbar-nav ms-auto">
+            <li id="navHomeButton" class="nav-item active">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li id="navMenuButton" class="nav-item">
+              <a class="nav-link" href="#" onclick="$dc.loadMenuCategories();">Menu</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div id="main-content" class="container"></div>
+
+  <footer class="footer mt-auto py-3 bg-light">
+    <div class="container text-center">
+      <span>&copy; David Chu's China Bistro 2024</span>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/ajax-utils.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
